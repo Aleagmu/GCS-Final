@@ -2,6 +2,13 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+ion-content{
+  --background: linear-gradient(to bottom, #fd3a73, #e9366b, #d53262, #c22f5a, #af2b52);
+}
+#mainGrid{
+  margin-top: 100px;
+}
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
