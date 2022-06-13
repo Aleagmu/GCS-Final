@@ -9,6 +9,21 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+
+#menuColor{
+    --background: #rgba(253,41,123,1);
+}
+#buttonStyle{
+    color: none; --border-width: 0px !important;
+    --background: #rgba(253,41,123,1);
+
+}
+ion-content{
+    --background: linear-gradient(90deg, rgba(253,41,123,1) 0%, rgba(255,88,100,1) 50%, rgba(255,101,91,1) 100%);}
+
+#mainGrid{
+margin-top: 100px;
+}
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
 
