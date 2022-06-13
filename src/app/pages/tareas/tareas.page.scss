@@ -1,0 +1,16 @@
+.bodyGrid{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.inputSearch{
+    width: 60%;
+    --background: rgb(233, 231, 231);
+    --border-radius: 20px;
+}
+.buttonStyle{
+    margin-left: 5%;
+    --border-radius: 20px;
+    --background: rgb(168, 168, 168);
+}
