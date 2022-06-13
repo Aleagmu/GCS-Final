@@ -22,7 +22,14 @@
 <body>
   <ion-header>
     <ion-toolbar id="menuColor">
-      <ion-button id="buttonStyle" href="/home"><ion-title>PsicoUa</ion-title></ion-button>
+      <ion-grid class="menuContent">
+        <ion-grid class="menuButton">
+          <ion-button id="buttonStyle" href="/home"><ion-title>PsicoUa</ion-title></ion-button>
+        </ion-grid>
+        <ion-grid class="menuPicture">
+          <a style=" max-width: 100%; max-height: 100%;"href="/perfil"><img style="max-width: 100%; max-height: 100%;" href="/perfil" src="./assets/images/profilePicture.png"></a>
+        </ion-grid>
+      </ion-grid>
     </ion-toolbar>
   </ion-header>
   <app-root></app-root>

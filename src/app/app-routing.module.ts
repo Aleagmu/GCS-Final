@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'psicologos',
     loadChildren: () => import('./pages/psicologos/psicologos.module').then( m => m.PsicologosPageModule)
   },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 ];
 
 @NgModule({
