@@ -36,11 +36,15 @@ ion-content{
 
 #mainGrid{
     margin-top: 150px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%
+    width: 100%;
     
+}
+
+.flechaAtras{
+    width: 50px;
+}
+
+.gridFlecha{
 }
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";

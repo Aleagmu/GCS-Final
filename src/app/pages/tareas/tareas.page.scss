@@ -14,7 +14,7 @@
 .buttonSearch{
     margin-left: 5%;
     --border-radius: 20px;
-    --background: rgb(168, 168, 168);
+    --background: rgb(77, 73, 73);
 }
 
 .labelInput{
@@ -40,15 +40,4 @@
     color: rgb(39, 38, 38);
     font-size: 40px;
     margin-left: 1%;
-}
-
-.flechaAtras{
-    width: 50px;
-}
-
-.gridFlecha{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    height: 20%;
 }

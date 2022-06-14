@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'tarea/:id',
+    loadChildren: () => import('./pages/tarea/tarea.module').then( m => m.TareaPageModule)
+  },
 ];
 
 @NgModule({
