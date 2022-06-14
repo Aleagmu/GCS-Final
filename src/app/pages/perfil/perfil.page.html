@@ -1,12 +1,58 @@
 
 
 <ion-content>
-
   <ion-grid id="mainGrid">
-    
+    <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked" class="labelInput">Nombre</ion-label>
+            <ion-input readonly="{{readOnly}}" formControlName="nombre"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked" class="labelInput">Edad</ion-label>
+            <ion-input readonly="{{readOnly}}" formControlName="edad"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked" class="labelInput">Ciudad</ion-label>
+            <ion-input readonly="{{readOnly}}" formControlName="ciudad"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked" class="labelInput">Género</ion-label>
+            <ion-input readonly="{{readOnly}}" formControlName="genero"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked" class="labelInput">Idioma</ion-label>
+            <ion-input readonly="{{readOnly}}" formControlName="idioma"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item color="dark">
+            <ion-label position="stacked">Descripción</ion-label>
+            <ion-textarea rows="6" cols="20" readonly="{{readOnly}}" formControlName="descripcion"></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </form>
+    <ion-button>Modificar</ion-button>
   </ion-grid>
-    
-
-
 </ion-content>
 
