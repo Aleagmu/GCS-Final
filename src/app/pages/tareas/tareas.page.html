@@ -7,11 +7,12 @@
       
       <ion-item class="inputSearch">
           <ion-label class="labelInput" position="floating">Buscar una tarea...</ion-label>
-          <ion-input shape="round"></ion-input>
+          <ion-input id="input" class="inputVal" shape="round"></ion-input>
       </ion-item>
-      <ion-button class="buttonSearch">Buscar</ion-button>
-      
+      <ion-button id="button" tappable (click)="search()" class="buttonSearch">Buscar</ion-button>
+
     </ion-grid>
+    <ion-label id="errorLabel"></ion-label>
     <br>
     <br>
     <br>
@@ -23,7 +24,7 @@
 
     <ion-grid class="tareasGrid">
 
-      <ion-button href="/tarea/1" class="buttonTarea">Tarea 1</ion-button>
+      <ion-button href="/tarea/tarea1" class="buttonTarea">Tarea 1</ion-button>
       
       <ion-item class="checkboxTareas">
         <ion-checkbox></ion-checkbox>
@@ -33,7 +34,7 @@
 
     <ion-grid class="tareasGrid">
 
-      <ion-button href="/tarea/2" class="buttonTarea">Tarea 2</ion-button>
+      <ion-button href="/tarea/tarea2" class="buttonTarea">Tarea 2</ion-button>
       
       <ion-item class="checkboxTareas">
         <ion-checkbox></ion-checkbox>
@@ -43,7 +44,7 @@
 
     <ion-grid class="tareasGrid">
 
-      <ion-button href="/tarea/3" class="buttonTarea">Tarea 3</ion-button>
+      <ion-button href="/tarea/tarea3" class="buttonTarea">Tarea 3</ion-button>
       
       <ion-item class="checkboxTareas">
         <ion-checkbox></ion-checkbox>
@@ -53,7 +54,7 @@
 
     <ion-grid class="tareasGrid">
 
-      <ion-button href="/tarea/4" class="buttonTarea">Tarea 4</ion-button>
+      <ion-button href="/tarea/tarea4" class="buttonTarea">Tarea 4</ion-button>
       
       <ion-item class="checkboxTareas">
         <ion-checkbox></ion-checkbox>
