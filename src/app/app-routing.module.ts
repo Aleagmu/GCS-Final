@@ -35,6 +35,11 @@ const routes: Routes = [
     path: 'tarea/:id',
     loadChildren: () => import('./pages/tarea/tarea.module').then( m => m.TareaPageModule)
   },
+  {
+    path: 'chat/:id',
+    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
+  },
+
 ];
 
 @NgModule({
