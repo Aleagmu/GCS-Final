@@ -1,11 +1,11 @@
 
 
 <ion-content>
-  <ion-grid id="mainGrid">
+  <ion-grid id="mainGrid" class="perfil">
     <form [formGroup]="formData" (ngSubmit)="onSubmit()">
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked" class="labelInput">Nombre</ion-label>
             <ion-input readonly="{{readOnly}}" formControlName="nombre"></ion-input>
           </ion-item>
@@ -13,7 +13,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked" class="labelInput">Edad</ion-label>
             <ion-input readonly="{{readOnly}}" formControlName="edad"></ion-input>
           </ion-item>
@@ -21,7 +21,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked" class="labelInput">Ciudad</ion-label>
             <ion-input readonly="{{readOnly}}" formControlName="ciudad"></ion-input>
           </ion-item>
@@ -29,7 +29,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked" class="labelInput">Género</ion-label>
             <ion-input readonly="{{readOnly}}" formControlName="genero"></ion-input>
           </ion-item>
@@ -37,7 +37,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked" class="labelInput">Idioma</ion-label>
             <ion-input readonly="{{readOnly}}" formControlName="idioma"></ion-input>
           </ion-item>
@@ -45,7 +45,7 @@
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-item color="dark">
+          <ion-item color="{{darkModeInput}}">
             <ion-label position="stacked">Descripción</ion-label>
             <ion-textarea rows="6" cols="20" readonly="{{readOnly}}" formControlName="descripcion"></ion-textarea>
           </ion-item>
@@ -55,13 +55,19 @@
     <ion-grid>
       <ion-row class="ion-justify-content-between">
         <ion-col size="3">
-          <ion-button shape="round" fill="clear" color="light" href="home" target="_parent"><ion-icon name="arrow-undo" size="large"></ion-icon></ion-button>
+          <ion-button shape="round" fill="clear" color="{{darkModeButtons}}" href="home" target="_parent"><ion-icon name="arrow-undo" size="large"></ion-icon></ion-button>
         </ion-col>
         <ion-col size="4">
-          <ion-button shape="round" color="light" (click)="readOnlyFunc()">{{buttonText}}</ion-button>
+          <ion-button shape="round" color="{{darkModeButtons}}" (click)="readOnlyFunc()">{{buttonText}}</ion-button>
         </ion-col>
       </ion-row> 
     </ion-grid>
-    </ion-grid>
+
+    <ion-tabs >
+      <ion-tab-bar slot="bottom" color="clear">  
+        <ion-button shape="round" fill="clear" color="{{darkModeButtons}}" (click)="switchDarkMode()"><ion-icon name="moon-outline" size="large"></ion-icon></ion-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-grid>
 </ion-content>
 
