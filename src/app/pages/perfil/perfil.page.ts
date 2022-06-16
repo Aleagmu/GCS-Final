@@ -10,11 +10,13 @@ export class PerfilPage implements OnInit {
 
   private formData: FormGroup;
   private readOnly: boolean;
+  private buttonText: string;
 
   constructor() { }
 
   ngOnInit() {
       this.readOnly = true;
+      this.buttonText = 'Modificar';
       this.formData = new FormGroup({
         nombre: new FormControl('Francisco López Muñoz'),
         edad: new FormControl('25'),
@@ -24,5 +26,13 @@ export class PerfilPage implements OnInit {
         descripcion: new FormControl('Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorum quo nobis culpa doloribus facilis aut laudantium voluptatem, atque dicta, similique et odit totam, cumque consequatur? Ab officia voluptatem itaque.')
       });
   }
-
+  readOnlyFunc() {
+    this.readOnly = !this.readOnly;
+    if(this.readOnly){
+      this.buttonText = 'Modificar';
+    }
+    else{
+      this.buttonText = 'Confirmar'
+    }
+  }
 }
