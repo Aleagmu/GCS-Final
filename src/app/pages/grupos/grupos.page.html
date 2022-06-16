@@ -2,9 +2,38 @@
 <ion-content>
 
     <ion-grid id="mainGrid">
-      
-    </ion-grid>
-      
+        <ion-grid class="flex">
+            <u><ion-label class="titleGrupo">Listado de grupos</ion-label></u>
+            <br>
+            <br>
+            <br>
+            <div class="group" *ngFor="let group of groups;">
+              <img src="{{group.image}}" class="group-image"/>
+              <div class="group-info">
+                <p class="group-name">{{group.name}}</p>
+                <ion-button class="buttonUnirse" tappable (click)="unirseGrupo(group)">Unirse</ion-button>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <u><ion-label class="titleGrupo">Grupos a los que perteneces</ion-label></u>
+            <br>
+            <br>
+            <br>
+            <div class="group" *ngFor="let pertenece of perteneces;">
+                <img src="{{pertenece.image}}" class="group-image"/>
+                <div class="group-info">
+                  <p class="group-name">{{pertenece.name}}</p>
+                  <ion-button class="buttonSalirse" tappable (click)="salirGrupo(pertenece.id)">Salirse</ion-button>
+                </div>
+            </div>
+        </ion-grid>
+
+        <ion-grid class="gridFlecha">
+            <a style="width: 50px;" href="/home"><img class="flechaAtras" src="../../../assets/images/flechaAtras.png"></a>
+        </ion-grid>
+    </ion-grid>   
   
 
 </ion-content>
