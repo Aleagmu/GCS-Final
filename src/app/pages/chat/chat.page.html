@@ -1,0 +1,33 @@
+<ion-content>
+    <ion-grid id="mainGrid">
+        <p *ngIf="!usuarioEncontrado">Usuario no encontrado</p>
+        <div *ngIf="usuarioEncontrado" class="flex">
+            <p>Hablando con {{talkingTo}}</p>
+            <div class="chat">
+                <div class="message-container">
+                    <div class="incoming-message">
+                        Hola! Buenos días
+                    </div>
+                </div>
+                <div class="message-container" *ngFor="let message of messages">
+                    <div class="my-message">
+                        {{message}}
+                    </div>
+                </div>
+                
+                <div class="send-message">
+                    <ion-item class="inputSearch">
+                        <ion-label class="labelInput" position="floating">Nuevo Mensaje</ion-label>
+                        <ion-input id="input" class="inputVal" shape="round" [formControl]="messageText" (keyup.enter)="sendMessage()"></ion-input>
+                    </ion-item>
+                    <ion-icon name="send" class="sendIcon" (click)="sendMessage()" ></ion-icon>
+                </div>
+            </div>
+            <ion-grid>
+                <a style="width: 50px;" href="/mensajes"><img class="flechaAtras" src="../../../assets/images/flechaAtras.png"></a>
+            </ion-grid>
+        </div>
+        
+    </ion-grid>
+    
+</ion-content>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Users, User } from 'src/app/models/psicologos.model';
 
 @Component({
   selector: 'app-psicologos',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PsicologosPage implements OnInit {
 
-  constructor() { }
+  chats: User[]
+
+  constructor(private router: Router) {
+    this.chats = Users
+   }
 
   ngOnInit() {
+  }
+
+  navigateToChat(id: number){
+    this.router.navigate(['/chat/' + id])
   }
 
 }
