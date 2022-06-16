@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Groups, Group } from 'src/app/models/group.model';
 
 @Component({
   selector: 'app-grupos',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grupos.page.scss'],
 })
 export class GruposPage implements OnInit {
+  groups: Group[]
 
-  constructor() { }
+  constructor(private router: Router) { this.groups=Groups }
 
   ngOnInit() {
   }

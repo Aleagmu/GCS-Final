@@ -1,0 +1,49 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group{
+    display: flex;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.group-image{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.group-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.group-name{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(47, 49, 43);
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.titleGrupo{
+    color: rgb(39, 38, 38);
+    font-size: 40px;
+    margin-left: 1%;
+}
+
+.buttonUnirse{
+    --border-radius: 20px;
+    --background: rgb(30, 207, 30);
+}
+
+.buttonSalirse{
+    --border-radius: 20px;
+    --background: rgb(153, 17, 17);
+}
