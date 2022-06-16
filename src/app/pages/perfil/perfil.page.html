@@ -62,16 +62,12 @@
         </ion-col>
       </ion-row> 
     </ion-grid>
-    <ion-grid>
-      <ion-row>
-        <ion-button shape="round" fill="clear" color="{{darkModeButtons}}" (click)="switchDarkMode()"><ion-icon name="moon-outline" size="large"></ion-icon></ion-button>
-      </ion-row>
-    </ion-grid>
-    
-  </ion-grid>
-  <ion-footer-bar class="bar-stable">
-    <ion-item nav-clear menu-close href="#" style="left:0;right:0;margin:0; width: 100%;position: fixed;">Logout</ion-item>
-  </ion-footer-bar>
-</ion-content>
 
+    <ion-tabs >
+      <ion-tab-bar slot="bottom" color="clear">  
+        <ion-button shape="round" fill="clear" color="{{darkModeButtons}}" (click)="switchDarkMode()"><ion-icon name="moon-outline" size="large"></ion-icon></ion-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-grid>
+</ion-content>
 
