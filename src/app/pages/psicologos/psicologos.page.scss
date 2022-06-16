@@ -1,0 +1,40 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat{
+    display: flex;
+    width: 30%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-image{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.user-name{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(47, 49, 43);
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.user-work{
+    font-size: medium;
+    font-style: italic;
+    margin: 0px
+}
