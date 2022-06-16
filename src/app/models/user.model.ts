@@ -24,5 +24,17 @@ export var Users: User[] = [
     new User(3,
       "https://pbs.twimg.com/media/EuW7HAXXcAEZB3s?format=jpg&name=small",
       "Robertson",
-      "Psicólogo")
+      "Psicólogo"),
+    new User(4,
+      "https://media-exp1.licdn.com/dms/image/C5603AQE_9Q8xHYF9JQ/profile-displayphoto-shrink_800_800/0/1643290146892?e=1660780800&v=beta&t=pPADGnpvEvarA37AMJzBpJ7w6reqXzAugL48KGhmrGc",
+      "Alvaro Pastor",
+      "Paciente"),
+    new User(5,
+      "../assets/images/alejandro.jpeg",
+      "Alejandro Aguado",
+      "Paciente"),
+    new User(6,
+      "https://media-exp1.licdn.com/dms/image/C5603AQHcx04nbUqkAw/profile-displayphoto-shrink_800_800/0/1565595153299?e=1660780800&v=beta&t=U1TesLin-FJ2uctvGUr29d7OlNUCcjJIjfCi_SPIeIc",
+      "Andres Felipe Lopez",
+      "Paciente")
 ]
