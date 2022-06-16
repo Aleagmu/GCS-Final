@@ -11,7 +11,7 @@
               <img src="{{group.image}}" class="group-image"/>
               <div class="group-info">
                 <p class="group-name">{{group.name}}</p>
-                <ion-button class="buttonUnirse">Unirse</ion-button>
+                <ion-button class="buttonUnirse" (click)="unirseGrupo(group)">Unirse</ion-button>
               </div>
             </div>
             <br>
@@ -21,10 +21,10 @@
             <br>
             <br>
             <br>
-            <div class="group" *ngFor="let group of groups;">
-                <img src="{{group.image}}" class="group-image"/>
+            <div class="group" *ngFor="let pertenece of perteneces;">
+                <img src="{{pertenece.image}}" class="group-image"/>
                 <div class="group-info">
-                  <p class="group-name">{{group.name}}</p>
+                  <p class="group-name">{{pertenece.name}}</p>
                   <ion-button class="buttonSalirse">Salirse</ion-button>
                 </div>
             </div>

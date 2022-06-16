@@ -9,10 +9,15 @@ import { Groups, Group } from 'src/app/models/group.model';
 })
 export class GruposPage implements OnInit {
   groups: Group[]
+  perteneces: Group[]
 
   constructor(private router: Router) { this.groups=Groups }
 
   ngOnInit() {
+  }
+
+  unirseGrupo(group: Group){
+    this.perteneces.push(group)
   }
 
 }
